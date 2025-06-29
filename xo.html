@@ -26,27 +26,6 @@
   <!-- Header at top -->
   <h2 class="display-5 mt-4 mb-4">XO Game</h2>
 
-  <!-- Grid wrapper centered but slightly higher -->
-  <div class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 350px);">
-    <div class="row row-cols-3 g-0 b-w" style="width: 400px; height: 400px;">
-      <div class="col border-end border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col border-end border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-
-      <div class="col border-end border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col border-end border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col border-bottom border-dark b-w d-flex justify-content-center align-items-center"></div>
-
-      <div class="col border-end border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col border-end border-dark b-w d-flex justify-content-center align-items-center"></div>
-      <div class="col b-w d-flex justify-content-center align-items-center"></div>
-    </div>
-  </div>
-
-  <!-- Start Button -->
-    <div style="margin-top: 10px; margin-bottom: 5px;">
-  <button class="btn btn-primary p-font px-4 py-2">Start</button>
-    </div>
   <!-- Status section -->
   <div class="container my-3">
     <div class="row justify-content-center text-dark">
@@ -55,15 +34,45 @@
         <p class="mb-0">Wins: <span class="fw-bold">0</span></p>
       </div>
       <div class="col-md-3 bg-white rounded shadow-sm p-3 mx-2">
-        <h5 class="mb-1">Player O</h5>
-        <p class="mb-0">Wins: <span class="fw-bold">0</span></p>
-      </div>
-      <div class="col-md-3 bg-white rounded shadow-sm p-3 mx-2">
         <h5 class="mb-1">Draws</h5>
         <p class="mb-0">Count: <span class="fw-bold">0</span></p>
       </div>
+      <div class="col-md-3 bg-white rounded shadow-sm p-3 mx-2">
+        <h5 class="mb-1">Player y</h5>
+        <p class="mb-0">Wins: <span class="fw-bold">0</span></p>
+      </div>
+      
     </div>
   </div>
+
+  <!-- Grid wrapper centered but slightly higher -->
+  <div class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 350px);">
+    <div class="row row-cols-3 g-0 b-w" style="width: 400px; height: 400px;">
+      <div class="col border-end border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-end border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+
+      <div class="col border-end border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-end border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-bottom border-dark border-5 d-flex justify-content-center align-items-center"></div>
+
+      <div class="col border-end border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-end border-dark border-5 d-flex justify-content-center align-items-center"></div>
+      <div class="col border-5 d-flex justify-content-center align-items-center"></div>
+    </div>
+  </div>
+  <!-- Turn Indicator -->
+    <div class="my-2">
+  <h5 class="text-dark bg-white d-inline-block px-3 py-2 rounded shadow-sm">
+    Turn: <span id="currentTurn" class="fw-bold">X</span>
+  </h5>
+    </div>
+
+  <!-- Start Button -->
+    <div style="margin-top: 10px; margin-bottom: 5px;">
+  <button class="btn btn-primary p-font px-4 py-2">Start</button>
+    </div>
+
 
   
 
