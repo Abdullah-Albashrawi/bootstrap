@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <label for="btn" id="l1"> Turn your name to Caps
+    <input type="text" id="i1">
+   </label> 
+   <button id="b1"></button>
+
+    <p id="par">hello abd</p>
+    <p id="output"></p>
+    <script >
+        
+     /*let x = 10
+     let y = 4
+     console.log("the first n "+ x)
+     console.log("the sec n "+ y)
+
+     console.log("sum is "+ (x + y))
+     console.log(" mult is "+ (x * y))
+     console.log("sub is "+ (x - y))
+     console.log("div is "+ (x / y))
+     console.log("mod is "+ (x % y)) */
+
+      //let p = document.getElementById("par").innerHTML.toUpperCase()
+      //document.write(p)
+      
+    
+
+        var par = document.getElementById("par")
+        var out = document.getElementById("output")
+       
+       out.value = par.substring(0,4)
+
+        document.writeln(out)
+
+
+
+
+    </script>
+</body>
+
+</html>
