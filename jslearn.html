@@ -7,41 +7,46 @@
 </head>
 
 <body>
-   <label for="btn" id="l1"> Turn your name to Caps
-    <input type="text" id="i1">
-   </label> 
-   <button id="b1"></button>
+   <button onclick="showUser()">Show JSON</button>
+<pre id="output"></pre>
 
-    <p id="par">hello abd</p>
-    <p id="output"></p>
+    <p id="out"></p>
+   <button id="b">date</button>
+<br>
+   <img id="pic" src="img/logo.png" alt="" style="width: 200px; height: 200px;">
+   <button id="b2" >logo</button>
+    <button id="b3">another</button>
     <script >
+        document.getElementById("b").addEventListener("click", function(){
+            document.getElementById("out").innerHTML = Date()
+
+        })
+        document.getElementById("b3").addEventListener("click",function(){
+            document.getElementById("pic").src = 'img/note.png'
+
+        })
+         document.getElementById("b2").addEventListener("click",function(){
+            document.getElementById("pic").src = 'img/pro.png'
+
+        })
+        document.getElementById("b").style= "none"
         
-     /*let x = 10
-     let y = 4
-     console.log("the first n "+ x)
-     console.log("the sec n "+ y)
+        const person = {
+            name :"ali",
+        }
+        console.log(person.name)
 
-     console.log("sum is "+ (x + y))
-     console.log(" mult is "+ (x * y))
-     console.log("sub is "+ (x - y))
-     console.log("div is "+ (x / y))
-     console.log("mod is "+ (x % y)) */
+        function showUser() {
+  let user = {
+    name: "Abdullah",
+    age: 22,
+    isStudent: true
+  };
 
-      //let p = document.getElementById("par").innerHTML.toUpperCase()
-      //document.write(p)
-      
-    
-
-        var par = document.getElementById("par")
-        var out = document.getElementById("output")
-       
-       out.value = par.substring(0,4)
-
-        document.writeln(out)
-
-
-
-
+  let json = JSON.stringify(user, null, 2); // Pretty print
+  document.getElementById("output").innerText = json;
+}
+   
     </script>
 </body>
 
